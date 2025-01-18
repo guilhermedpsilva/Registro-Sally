@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="projeto-social/index.html" target="_blank" rel="noopener">Projeto Social</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="center">
+        <h1>Registre-se aqui</h1>
+        <h2>(Limite 10 pessoas)</h2>
+    </div>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Registro</legend>
+                <label for="nome">
+                    <p>Nome: <input type="text" required placeholder="Nome" id="nome"></p>
+                </label>
+                <label for="idade">
+                    <p>Idade: <input type="number" required placeholder="Idade" id="idade"></p>
+                </label>
+                <p>Sexo:
+                    <label for="genero" class="genero">Homem <input type="radio" name="sexo" id="sexoM" required checked></label>
+                    <label for="genero" class="genero">/ Mulher <input type="radio" name="sexo" id="sexoF"></label>
+                </p>
+                <div id="container">
+                    <label for="adicionar">
+                        <p><input type="button" name="adicionar" value="Adicionar" class="button" onclick="adicionar()"></p>
+                    </label>
+                    <label for="finalizar"><p><input type="button" value="Finalizar" name="finalizar" onclick="finalizar()" class="button"></p></label>
+                    <label for="apagar">
+                        <p><input type="button" name="apagar" id="espaço" value="Limpar" class="button" onclick="apagar()"></p>
+                    </label>
+                </div>
+            </fieldset>
+            <div class="borda-div">
+                <div id="pessoas">
+                </div>
+                <div id="res">
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; SallyDev</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
