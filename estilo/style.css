@@ -11,7 +11,7 @@ body {
     background: url(../img/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    max-width: 1000px;
+    max-width: 700px;
     min-width: 500px;
     margin: auto;
 }
@@ -61,6 +61,7 @@ div#center {
     margin: 20px auto;
     color: white;
     max-width: 260px;
+    min-width: 100px;
     padding: 0px;
 }
 
@@ -74,7 +75,7 @@ main {
     padding: 30px;
     margin: 50px auto;
     max-width: 700px;
-    min-width: 100px;
+    min-width: 300px;
     border-radius: 7px;
     border: solid 2px rgba(55, 55, 255, 0.568);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.493);
